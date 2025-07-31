@@ -1,0 +1,49 @@
+footer {
+    height: 497px;
+    background-color: var(--color-negro);
+    color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+
+.footer_links ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.32rem;
+}
+
+.footer_links ul li a {
+    font-size: 1.87rem;
+
+}
+
+.footer_contacto {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.32rem;
+    font-size: 1.6rem;
+}
+
+.footer_asociados {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.footer_fundaciones {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+}
+
+.footer_redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+}

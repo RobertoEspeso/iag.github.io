@@ -1,0 +1,77 @@
+.section-travel {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-wwd-travel {
+    height: 912px;
+    width: 675px;
+    ;
+}
+
+.card-container div {
+    background-color: var(--color-naranja);
+    height: 176px;
+    bottom: 204px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0px 0px 35px 50px;
+    border-radius: 0px 0px 21px 21px;
+}
+
+.card-container div p {
+    font-size: 2.5rem;
+}
+
+.section-info-travel {
+    width: 1060px;
+    padding: 50px;
+    background-color: var(--color-beige);
+    border-radius: 21px;
+}
+
+.section-info-travel h2 {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-light);
+    font-size: 4.4rem;
+    max-width: 21ch;
+    margin-bottom: 80px;
+
+}
+
+.section-info-travel h4 {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-medium);
+    font-size: 1.8rem;
+    max-width: 45ch;
+    margin-bottom: 20px;
+}
+
+.section-info-travel p {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-light);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    max-width: 55ch;
+}
+
+.section-info-travel .important-items span {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-medium);
+    font-size: 1.8rem;
+    color: var(--color-naranja);
+}
+
+.section-info-travel .important-items p {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-light);
+    font-size: 1.6rem;
+    color: var(--color-naranja);
+}

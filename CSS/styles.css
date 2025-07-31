@@ -1,0 +1,420 @@
+/* === Reset básico moderno === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-SF);
+}
+
+h1,
+h2 {
+  font-family: var(--font-Gotham);
+}
+
+/* === SF Pro Display === */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFProDisplay-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFProDisplay-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../assets/fonts/SFProDisplay-Semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Gotham === */
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/GothamNarrow-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../assets/fonts/Gotham-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-naranja: #F37E43;
+  --color-celeste: #00ADB5;
+  --color-verde: #A3BF5E;
+  --color-violacio: #5A73D6;
+  --color-beige: #F5F1EA;
+  --color-negro: #111313;
+  --font-Gotham: 'Gotham', sans-serif;
+  --font-SF: 'SF Pro Display', sans-serif;
+  --Gotham-light: 300;
+  --Gotham-regular: 400;
+  --Gotham-medium: 500;
+  --Sf-light: 300;
+  --Sf-regular: 400;
+  --Sf-medium: 500;
+  --Sf-semiBold: 600;
+}
+
+.df {
+  display: flex;
+}
+
+.btn {
+  width: 264px;
+  height: 65px;
+  border-radius: 60px;
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-semiBold);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #FFF;
+  padding: 12px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 10;
+}
+
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn-violacio {
+  background-color: var(--color-violacio);
+}
+
+.btn-violacio:hover {
+  background-color: #FFF;
+  border: 2.5px solid var(--color-violacio);
+  color: var(--color-violacio);
+}
+
+.btn-verde {
+  background-color: var(--color-verde);
+}
+
+.btn-verde:hover {
+  background-color: #FFF;
+  border: 2.5px solid var(--color-verde);
+  color: var(--color-verde);
+}
+
+
+.btn-naranja {
+  background-color: var(--color-naranja);
+}
+
+.btn-naranja:hover {
+  background-color: #FFF;
+  border: 2.5px solid var(--color-naranja);
+  color: var(--color-naranja);
+}
+
+
+.btn-celeste {
+  background-color: var(--color-celeste);
+}
+
+.btn-celeste:hover {
+  background-color: #FFF;
+  border: 2.5px solid var(--color-celeste);
+  color: var(--color-celeste);
+}
+
+/* === Cards === */
+.section-wwd {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  gap: 40px;
+}
+
+
+.section-wwd .card-wwd:nth-child(2) .card-container div {
+  background-color: var(--color-celeste);
+}
+
+.section-wwd .card-wwd:nth-child(3) .card-container div {
+  background-color: var(--color-verde);
+}
+
+.card-wwd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 516px;
+  width: 470px;
+  border-radius: 21px;
+  background-color: var(--color-beige);
+}
+
+.card-wwd a {
+  position: relative;
+  top: 450px;
+}
+
+.circulo-icono {
+  width: 116px;
+  position: relative;
+  bottom: 60px;
+  z-index: 5;
+}
+
+.card-container {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 21px;
+}
+
+.card-container div {
+  background-color: var(--color-naranja);
+  height: 130px;
+  bottom: 83px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 21px 21px;
+}
+
+.card-container .animacion-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--color-beige);
+  bottom: 83px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+}
+
+.card-container div p {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-regular);
+  font-size: 2rem;
+  color: #FFF;
+}
+
+
+/* === Contactanos pre footer === */
+
+.container-contactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  gap: 60px;
+}
+
+
+.container-contactanos-recuadro {
+  background-color: var(--color-beige);
+  border-radius: 21px;
+  margin: 20px;
+}
+
+.get-in-touch-animacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.container-contactanos p {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-light);
+  font-size: 1.9rem;
+}
+
+.container-contactanos h2 {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-light);
+  font-size: 5.3rem;
+  max-width: 32ch;
+  text-align: center;
+  line-height: 80px;
+}
+
+.container-contactanos h2 span {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-semiBold);
+  font-size: 5rem;
+}
+
+
+
+/* === Travels Pages === */
+
+.section-travel {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card-wwd-travel {
+  height: 912px;
+  width: 675px;
+  ;
+}
+
+.card-container-sections {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 21px;
+}
+
+.card-container-sections div {
+  background-color: var(--color-naranja);
+  height: 176px;
+  bottom: 204px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0px 0px 35px 50px;
+  border-radius: 0px 0px 21px 21px;
+}
+
+.card-container-sections div p {
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
+.section-info-travel {
+  width: 1060px;
+  padding: 50px;
+  background-color: var(--color-beige);
+  border-radius: 21px;
+}
+
+.section-info-travel h2 {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-light);
+  font-size: 4.4rem;
+  max-width: 21ch;
+  margin-bottom: 80px;
+
+}
+
+.section-info-travel h4 {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-medium);
+  font-size: 1.8rem;
+  max-width: 45ch;
+  margin-bottom: 20px;
+}
+
+.section-info-travel p {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-light);
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  max-width: 55ch;
+}
+
+.section-info-travel .important-items span {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-medium);
+  font-size: 1.8rem;
+  color: var(--color-naranja);
+}
+
+.section-info-travel .important-items p {
+  font-family: var(--font-SF);
+  font-weight: var(--Sf-light);
+  font-size: 1.6rem;
+  color: var(--color-naranja);
+}

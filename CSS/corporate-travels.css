@@ -1,0 +1,27 @@
+.section-info-travel h2 {
+    max-width: 22ch;
+}
+
+.section-info-travel h4 {
+    max-width: 51ch;
+}
+
+
+.card-container-sections div {
+    background-color: var(--color-celeste);
+}
+
+.section-info-travel .important-items {
+    margin-top: 80px;
+}
+
+.section-info-travel .important-items span {
+    font-weight: var(--Sf-semiBold);
+    font-size: 2.5rem;
+    color: var(--color-celeste);
+}
+
+.section-info-travel .important-items p {
+    font-size: 2rem;
+    color: var(--color-celeste);
+}

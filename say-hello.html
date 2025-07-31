@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Hello</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/nav.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/say-hello.css">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+</head>
+
+<body>
+    <header>
+        <nav class="df">
+            <img src="./assets/logo-IAG.svg" alt="Logo-IAG">
+            <ul class="df">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav_desplegable">
+                    <a href="what-we-do.html" class="nav-link">What We Do?▾</a>
+                    <div class="container-submenu">
+                        <ul class="submenu">
+                            <li>
+                                <a href="entertainment-travel.html">Entertainment Travel</a>
+                            </li>
+                            <li>
+                                <a href="corporate-travel.html">Corporate Travel</a>
+                            </li>
+                            <li>
+                                <a href="leisure-travel.html">Leisure Travel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="trusted-by.html" class="nav-link">Trusted By</a>
+                </li>
+                <li>
+                    <a href="inside-iag.html" class="nav-link">Inside IAG</a>
+                </li>
+                <li>
+                    <a href="travel-profile.html" class="nav-link">Travel Profile</a>
+                </li>
+                <li>
+                    <a href="say-hello.html" class="nav-link">Say Hello</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="container-say-hello">
+        <secton class="hero-say-hello">
+            <img src="assets/Banner-Contact.png" alt="">
+        </secton>
+        <section class="say-hello-content">
+            <h2>Say Hello</h2>
+            <div class="card-form">
+                <form action="#" method="post" class="contact-form">
+                    <h4>Submit your request!</h4>
+                    <div class="contact-inputs">
+                        <div class="first-input">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="second-input">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                    </div>
+                    <div class="contact-inputs">
+                        <div class="first-input">
+                            <label for="email">E-mail Adress:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="second-input">
+                            <label for="phone">Cell Phone:</label>
+                            <input type="phone" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <div class="contact-inputs">
+                        <div class="first-input">
+                            <p>Service Inquiring About</p>
+                            <div class="dropdown">
+                                <div class="dropdown-selected">Please Select...</div>
+                                <ul class="dropdown-options">
+                                    <li data-value="entertainment">Entertainment Travel</li>
+                                    <li data-value="corporate">Corporate Travel</li>
+                                    <li data-value="leisure">Leisure Travel</li>
+                                </ul>
+                                <!-- Select real oculto -->
+                                <select name="travel-type" class="hidden-select" required>
+                                    <option value="" selected disabled>Please Select...</option>
+                                    <option value="entertainment">Entertainment Travel</option>
+                                    <option value="corporate">Corporate Travel</option>
+                                    <option value="leisure">Leisure Travel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-inputs">
+                        <div class="first-input">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" name="comments" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-violacio" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact">
+                <h4><span>Agency:</span> <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></h4>
+                <h4><span>Mail:</span> <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a></h4>
+            </div>
+    </article>
+    <footer>
+        <section class="footer_links">
+            <ul>
+                <li>
+                    <a href="inside-iag.html">Inside IAG</a>
+                </li>
+                <li>
+                    <a href="what-we-do.html">What We Do</a>
+                </li>
+                <li>
+                    <a href="say-hello.html">Say Hello</a>
+                </li>
+                <li>
+                    <a href="trusted-by.html">Trusted By</a>
+                </li>
+            </ul>
+        </section>
+        <section class="footer_contacto">
+            <p>Agency: <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></p>
+            <p>Mail: <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a></p>
+        </section>
+        <section class="footer_asociados">
+            <img src="assets/logo-IAG-blanco.svg" alt="">
+            <div class="footer_fundaciones">
+                <img src="assets/logo-niccolos-light-foundation.svg" alt="">
+                <img src="assets/ciff-logo.svg" alt="">
+            </div>
+            <div class="footer_redes">
+                <a href="#" target="_blank"><img src="assets/icono-ig.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="assets/icono-fb.svg" alt=""></a>
+                <a href="#" target="_blank"><img src="assets/icono-wp.svg" alt=""></a>
+            </div>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/dropdown.js"></script>
+</body>
+
+</html>
