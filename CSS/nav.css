@@ -68,3 +68,161 @@ nav ul {
 .nav_desplegable:hover .container-submenu {
   display: block;
 }
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    gap: 60px
+  }
+
+  .menu_mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  .menu_hamburguesa {
+    display: none;
+  }
+
+  .nav_desplegable {
+    position: relative;
+    display: inline-block;
+  }
+
+  .container-submenu {
+    right: -50px;
+    position: absolute;
+    display: none;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 5;
+    width: 250px;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+
+}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {
+
+  label,
+  .menu_hamburguesa {
+    display: inline-block;
+  }
+}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 1px;
+    justify-content: space-evenly;
+  }
+
+  .nav-link {
+    font-size: 0.6rem;
+  }
+
+  .nav-link.active {
+    font-size: 0.65rem;
+  }
+
+  .menu_mobile img {
+    width: 80%;
+  }
+
+  nav ul {
+    gap: 30px;
+  }
+
+  label,
+  .menu_hamburguesa {
+    display: none;
+  }
+
+}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  nav {
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 40px;
+    justify-content: space-around;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .nav-link.active {
+    font-size: 0.9rem;
+  }
+
+
+  nav ul {
+    gap: 40px;
+  }
+
+  label,
+  .menu_hamburguesa {
+    display: none;
+  }
+}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+  .nav-link,
+  .nav-link.active {
+    font-size: 1.3rem;
+  }
+
+  label,
+  .menu_hamburguesa {
+    display: none;
+  }
+
+  nav {
+    margin-left: 50px;
+    margin-right: 50px;
+    gap: 70px;
+  }
+}
