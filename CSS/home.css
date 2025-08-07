@@ -186,3 +186,61 @@
   opacity: 1;
   transform: translateY(0) scale(1);
 }
+
+
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .container-about-us {
+    gap: 250px;
+    padding: 148px 50px;
+  }
+
+  .section-wwd {
+    height: 900px;
+  }
+
+  .section-planificacion {
+    height: 1400px;
+  }
+
+  .container-planificacion {
+    height: 1200px;
+    width: 1400px;
+  }
+
+  .container-planificacion-textos h2 {
+    font-size: 3.5rem;
+  }
+
+  .container-planificacion-textos h3 {
+    font-size: 2rem;
+  }
+
+
+  .container-planificacion-pasos {
+    padding-right: 62px;
+  }
+
+}
