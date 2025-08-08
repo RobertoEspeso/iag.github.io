@@ -418,3 +418,107 @@ h2 {
   font-size: 1.6rem;
   color: var(--color-naranja);
 }
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+  .section-wwd {
+    height: 900px;
+  }
+
+  .card-wwd {
+    width: 350px;
+    height: 479px;
+  }
+
+  .card-container {
+    width: 350px;
+  }
+
+  .card-container .animacion-img {
+    bottom: 0px;
+  }
+
+  .card-container div {
+    bottom: 0px;
+  }
+
+  .card-container div p {
+    font-size: 1.7rem;
+  }
+
+  .card-wwd a {
+    position: relative;
+    top: 430px;
+  }
+
+  .circulo-icono {
+    width: 100px;
+  }
+
+  .section-info-travel {
+    width: 50%;
+  }
+
+  .section-info-travel h2 {
+    font-size: 3.5rem;
+  }
+
+  .container-contactanos h2 {
+    font-size: 4.5rem;
+  }
+
+  .section-info-travel h4 {
+    font-size: 1.6rem;
+  }
+
+  .section-info-travel p {
+    font-size: 1.5rem;
+  }
+
+  .section-info-travel .important-items span {
+    font-size: 1.6rem;
+  }
+
+  .section-info-travel .important-items p {
+    font-size: 1.4rem;
+  }
+
+  .card-wwd-travel {
+    height: 775px;
+    width: 600px;
+  }
+
+  .card-container-sections {
+    width: 600px;
+  }
+
+  .card-container-sections div {
+    padding: 0px 0px 60px 50px;
+  }
+
+  .card-container-sections div p {
+    font-size: 2.2rem;
+  }
+}

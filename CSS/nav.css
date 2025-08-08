@@ -69,6 +69,11 @@ nav ul {
   display: block;
 }
 
+label,
+.menu_hamburguesa {
+  display: none;
+}
+
 /*##### Media query #####*/
 
 /* Móvil */

@@ -160,3 +160,81 @@
     font-weight: var(--Sf-light);
     font-size: 1.6rem;
 }
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+    .wwd-container-textos {
+        height: 900px;
+        width: 90%;
+    }
+
+    .wwd-textos-izquierda h2 {
+        font-size: 3rem;
+    }
+
+    .wwd-textos-derecha h4 {
+        font-size: 1.8rem;
+        margin-bottom: 60px;
+    }
+
+    .wwd-textos-izquierda h3 {
+        font-size: 2rem;
+    }
+
+    .wwd-textos-derecha p {
+        font-size: 1.4rem;
+    }
+
+
+    .wwd-cards-container {
+        width: 95%;
+        gap: 40px;
+        margin-top: 150px;
+    }
+
+    .wwd-card-group {
+        width: 48%;
+    }
+
+    .wwd-card h4 {
+        font-size: 1.6rem;
+    }
+
+    .wwd-segunda-seccion h2 {
+        font-size: 4rem;
+    }
+
+    .www-tercer-seccion-container {
+        gap: 100px;
+    }
+
+    .wwd-tercer-seccion-textos h3 {
+        font-size: 1.8rem;
+    }
+
+    .wwd-tercer-seccion-textos p {
+        font-size: 1.5rem;
+    }
+}

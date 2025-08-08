@@ -160,3 +160,27 @@ span {
 .contact h4 a {
     text-decoration: underline;
 }
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {}

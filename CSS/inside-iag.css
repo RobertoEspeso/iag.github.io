@@ -132,3 +132,63 @@
     justify-content: center;
     gap: 145px;
 }
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+    .first-section-inside-iag img {
+        width: 60%;
+    }
+
+    .container-texts-inside-iag h2 {
+        font-size: 4rem;
+    }
+
+    .container-texts-inside-iag h4 {
+        font-size: 2.2rem;
+    }
+
+    .container-paragraphs p {
+        font-size: 1.6rem;
+    }
+
+    .container-message h3 {
+        font-size: 2.2rem;
+    }
+
+    .container-message p {
+        font-size: 1.3rem;
+    }
+
+    .container-sticker img {
+        width: 70%;
+        position: relative;
+        top: calc(6vw);
+        right: calc(-75vw);
+    }
+
+    .logos-partners img {
+        width: 30%;
+    }
+}

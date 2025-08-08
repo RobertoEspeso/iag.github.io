@@ -1,5 +1,5 @@
 .section-trusted-by {
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,4 +162,58 @@
     align-items: center;
     justify-content: center;
     gap: 145px;
+}
+
+
+
+
+
+/*##### Media query #####*/
+
+/* Móvil */
+@media (max-width: 480px) {}
+
+
+
+/* Teléfonos grandes */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Tablets vertical */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+
+
+
+
+/* Tablets horizontal / laptops chicas */
+@media (min-width: 1024px) and (max-width: 1279px) {}
+
+/* Desktop normal */
+@media (min-width: 1280px) and (max-width: 1535px) {
+
+    .section-trusted-by h2 {
+        font-size: 4rem;
+    }
+
+    .section-artist {
+        width: 80%;
+    }
+
+    .decoration-partner {
+        position: absolute;
+        right: 70px;
+        bottom: 250px;
+    }
+
+    .decoration-partner {
+        width: 376px
+    }
+
+    .container-cards-artist {
+        gap: 50px;
+    }
+
+    .logos-partners {
+        gap: 80px;
+    }
 }
