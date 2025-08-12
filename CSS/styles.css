@@ -438,11 +438,107 @@ h2 {
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  /* === Trio Cards Travels Pages === */
+  .btn {
+    width: 210px;
+    height: 50px;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+  .card-wwd {
+    height: 350px;
+    width: 250px;
+  }
+
+  .circulo-icono {
+    width: 90px;
+  }
+
+  .card-container {
+    height: 350px;
+    width: 250px;
+  }
+
+  .card-container .animacion-img {
+    bottom: 0px;
+  }
+
+  .card-container div {
+    bottom: 0px;
+    height: 100px;
+  }
+
+  .card-container div p {
+    font-size: 1.6rem;
+  }
+
+  .card-wwd a {
+    top: 300px;
+  }
+
+  .section-wwd {
+    height: 700px;
+  }
+
+  /* === Container Contactanos === */
+  .container-contactanos {
+    padding: 30px;
+  }
+
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 3rem;
+  }
+
+  .container-contactanos p {
+    font-size: 1.7rem;
+  }
+
+  /* === Travels Pages === */
+
+  .section-travel {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .section-info-travel {
+    width: 550px;
+    padding: 30px;
+  }
+
+  .section-info-travel h2 {
+    font-size: 2.5rem;
+  }
+
+  .section-info-travel h4 {
+    font-size: 1.6rem;
+  }
+
+  .section-info-travel p {
+    font-size: 1rem;
+  }
+
+  .section-info-travel .important-items span {
+    font-size: 1.4rem;
+  }
+
+  .section-info-travel .important-items p {
+    font-size: 1.2rem;
+  }
+}
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {
 
+  /* === Trio Cards Travels Pages === */
   .section-wwd {
     height: 900px;
   }
@@ -477,6 +573,7 @@ h2 {
     width: 100px;
   }
 
+  /* === Travels Pages === */
   .section-info-travel {
     width: 50%;
   }

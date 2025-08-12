@@ -69,8 +69,8 @@ nav ul {
   display: block;
 }
 
-label,
-.menu_hamburguesa {
+.menu_hamburguesa,
+.label_hamburguesa {
   display: none;
 }
 
@@ -142,8 +142,8 @@ label,
 /* Teléfonos grandes */
 @media (min-width: 481px) and (max-width: 767px) {
 
-  label,
-  .menu_hamburguesa {
+  .menu_hamburguesa,
+  .menu_hamburguesa>label {
     display: inline-block;
   }
 }
@@ -153,16 +153,21 @@ label,
   nav {
     margin-left: 10px;
     margin-right: 10px;
-    gap: 1px;
+    gap: 10px;
     justify-content: space-evenly;
   }
 
+  .menu_mobile {
+    width: 250px;
+
+  }
+
   .nav-link {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .nav-link.active {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
 
   .menu_mobile img {
@@ -173,10 +178,12 @@ label,
     gap: 30px;
   }
 
-  label,
-  .menu_hamburguesa {
+
+  .menu_hamburguesa,
+  .label_hamburguesa {
     display: none;
   }
+
 
 }
 
@@ -186,11 +193,32 @@ label,
 
 /* Tablets horizontal / laptops chicas */
 @media (min-width: 1024px) and (max-width: 1279px) {
+
   nav {
     margin-left: 30px;
     margin-right: 30px;
-    gap: 40px;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .container-submenu {
+    width: 200px;
+  }
+
+  .container-submenu .submenu li a {
+    font-size: 0.9rem;
+  }
+
+  .container-submenu .submenu li a:hover {
+    font-size: 0.9rem;
+  }
+
+  .menu_mobile {
+    width: 250px;
+  }
+
+  .menu_mobile img {
+    width: 70%;
   }
 
   .nav-link {
@@ -206,9 +234,18 @@ label,
     gap: 40px;
   }
 
-  label,
-  .menu_hamburguesa {
+  .menu_hamburguesa,
+  .label_hamburguesa {
     display: none;
+  }
+
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .nav-link.active {
+    font-size: 1.2rem;
   }
 }
 
@@ -220,10 +257,11 @@ label,
     font-size: 1.3rem;
   }
 
-  label,
-  .menu_hamburguesa {
+  .menu_hamburguesa,
+  .label_hamburguesa {
     display: none;
   }
+
 
   nav {
     margin-left: 50px;

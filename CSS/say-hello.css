@@ -180,7 +180,18 @@ span {
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .say-hello-content h2 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 4rem;
+    }
+
+    .contact h4,
+    span {
+        font-size: 2rem;
+    }
+}
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {}

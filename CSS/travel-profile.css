@@ -41,6 +41,8 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  justify-content: flex-end;
+  padding-right: 209px;
 }
 
 .container-cards {
@@ -147,6 +149,13 @@ textarea:focus {
   gap: 50px;
 }
 
+.container-hotel-programs-and-car-preferences-inputs,
+.container-rental-car-programs-inputs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
 /*dropdown*/
 .dropdown {
   position: relative;
@@ -206,6 +215,11 @@ textarea:focus {
   display: none;
 }
 
+.input-left h5 {
+  font-weight: var(--Sf-light);
+  font-size: 1rem;
+}
+
 /*///////////////////////////////////*/
 
 .container-travel-profile button {
@@ -233,7 +247,81 @@ textarea:focus {
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container-travel-profile h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+  }
+
+  .container-travel-profile form h4 {
+    font-size: 1.5rem;
+    max-width: 229px;
+  }
+
+  .container-travel-profile form p {
+    font-size: 0.8rem;
+    max-width: 219px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    width: 248px;
+    height: 50px;
+  }
+
+  input.input-full {
+    width: 540px;
+
+  }
+
+  .dropdown {
+    width: 248px;
+  }
+
+  .dropdown-selected {
+    width: 242px;
+    height: 50px;
+  }
+
+  .container-inputs-radio {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .title-radio label {
+    font-size: 1.4rem;
+  }
+
+  .input-radio label {
+    font-size: 1rem;
+  }
+
+  .container-inputs>a>img {
+    width: 5%;
+  }
+
+  .container-travel-profile form a {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .container-travel-profile form a {
+    padding-right: 133px;
+  }
+
+}
 
 /* Desktop normal */
-@media (min-width: 1280px) and (max-width: 1535px) {}
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .container-travel-profile form h4 {
+    max-width: 390px;
+  }
+
+  .container-travel-profile form p {
+    max-width: 328px;
+  }
+}

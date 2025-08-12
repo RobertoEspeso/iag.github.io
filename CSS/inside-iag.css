@@ -152,7 +152,67 @@
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .first-section-inside-iag {
+        width: 90%;
+        padding: 0px 40px;
+        margin-top: 100px;
+    }
+
+    .first-section-inside-iag img {
+        width: 50%;
+    }
+
+    .container-texts-inside-iag {
+        gap: 30px;
+    }
+
+    .container-texts-inside-iag h2 {
+        font-size: 3.2rem;
+    }
+
+    .container-texts-inside-iag h4 {
+        font-size: 1.6rem;
+    }
+
+    .container-paragraphs p {
+        font-size: 1.2rem;
+    }
+
+    .container-message {
+        margin-top: 130px;
+        margin-bottom: 30px;
+        width: 95%;
+        padding: 83px;
+    }
+
+    .container-message h3 {
+        font-size: 2rem;
+        max-width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .container-message p,
+    .container-message span {
+        font-size: 1.2rem;
+    }
+
+
+    .container-sticker img {
+        position: relative;
+        top: calc(7vw);
+        right: calc(-64vw);
+        width: 70%;
+    }
+
+    .logos-partners {
+        gap: 79px;
+    }
+
+    .logos-partners img {
+        width: 30%;
+    }
+}
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {

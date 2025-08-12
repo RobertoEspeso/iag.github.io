@@ -180,7 +180,75 @@
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .wwd-container-textos {
+        padding: 40px;
+        height: auto;
+        width: 90%;
+    }
+
+    .wwd-textos-izquierda h2 {
+        font-size: 3rem;
+    }
+
+    .wwd-textos-izquierda h3 {
+        font-size: 2rem;
+    }
+
+    .wwd-textos-derecha h4 {
+        font-size: 2rem;
+    }
+
+    .wwd-textos-derecha p {
+        font-size: 1.4rem;
+    }
+
+    .wwd-segunda-seccion h2 {
+        font-size: 3.5rem;
+    }
+
+    .wwd-cards-container {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        gap: 30px;
+    }
+
+    .wwd-tercer-seccion {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 150px auto;
+    }
+
+    .www-tercer-seccion-container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .www-tercer-seccion-container img {
+        max-width: 60%;
+    }
+
+    .wwd-tercer-seccion-textos h3 {
+        font-size: 1.8rem;
+    }
+
+    .wwd-tercer-seccion-textos p {
+
+        font-size: 1.4rem;
+    }
+
+}
+
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {

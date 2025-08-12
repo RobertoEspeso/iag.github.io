@@ -24,7 +24,13 @@
 <body>
     <header>
         <nav class="df">
-            <img src="./assets/logo-IAG.svg" alt="Logo-IAG">
+            <div class="menu_mobile">
+                <img src="./assets/logo-IAG.svg" alt="Logo-IAG">
+                <label class="label_hamburguesa" for="menu_hamburguesa">
+                    <img src="assets/Menu.svg" alt="" srcset="">
+                </label>
+                <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+            </div>
             <ul class="df">
                 <li>
                     <a href="index.html" class="nav-link">Home</a>
@@ -361,17 +367,20 @@
                 <div class="container-card">
                     <h4>Hotel Programs & Car Preferences</h4>
                     <div class="container-inputs">
-                        <div class="inputs-inline">
-                            <div class="input-left">
-                                <label for="hotel-name">Hotel Name</label>
-                                <input type="text" name="hotel-name" id="hotel-name">
-                            </div>
-                            <div class="input-right">
-                                <label for="guest-number">Guest Number</label>
-                                <input type="text" name="guest-number" id="guest-number">
-                                <a href="#"><img src="assets/plus-icon.svg" alt=""> Add Another</a>
+                        <div class="container-hotel-programs-and-car-preferences-inputs"
+                            id="container-hotel-programs-and-car-preferences-inputs">
+                            <div class="inputs-inline">
+                                <div class="input-left">
+                                    <label for="hotel-name">Hotel Name</label>
+                                    <input type="text" name="hotel-name" id="hotel-name">
+                                </div>
+                                <div class="input-right">
+                                    <label for="guest-number">Guest Number</label>
+                                    <input type="text" name="guest-number" id="guest-number">
+                                </div>
                             </div>
                         </div>
+                        <a href="#" id="btnAddInputHotel"><img src="assets/plus-icon.svg" alt=""> Add Another</a>
                     </div>
                 </div>
                 <div class="container-card">
@@ -421,17 +430,20 @@
                 <div class="container-card">
                     <h4>Rental Car Programs</h4>
                     <div class="container-inputs">
-                        <div class="inputs-inline">
-                            <div class="input-left">
-                                <label for="car-company-name">Car Company Name</label>
-                                <input type="text" name="car-company-name" id="car-company-name">
-                            </div>
-                            <div class="input-right">
-                                <label for="account-number-retal-car">Account Number</label>
-                                <input type="text" name="account-number-retal-car" id="account-number-retal-car">
-                                <a href="#"><img src="assets/plus-icon.svg" alt=""> Add Another</a>
+                        <div class="container-rental-car-programs-inputs" id="rental-car-programs-inputs">
+                            <div class="inputs-inline">
+                                <div class="input-left">
+                                    <label for="car-company-name">Car Company Name</label>
+                                    <input type="text" name="car-company-name" id="car-company-name">
+                                </div>
+                                <div class="input-right">
+                                    <label for="account-number-retal-car">Account Number</label>
+                                    <input type="text" name="account-number-retal-car" id="account-number-retal-car">
+                                </div>
                             </div>
                         </div>
+
+                        <a href="#" id="btnAddInputRentalCars"><img src="assets/plus-icon.svg" alt=""> Add Another</a>
                     </div>
                 </div>
                 <div class="container-card">
@@ -490,6 +502,7 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/addInputsForm.js"></script>
 </body>
 
 </html>

@@ -208,7 +208,86 @@
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .titular_principal {
+    font-size: 3.5rem;
+  }
+
+  .titular_principal_bold {
+    font-size: 3.5rem;
+  }
+
+  .container-about-us {
+    gap: 180px;
+    padding: 100px 50px;
+  }
+
+  .container-about-us p {
+    font-size: 1.8rem;
+  }
+
+  .about-info h2 {
+    font-size: 2.8rem;
+  }
+
+  .about-info h3 {
+    font-size: 2.3rem;
+  }
+
+
+
+  .container-planificacion {
+    height: 1025px;
+    width: 90%;
+    border-radius: 27px;
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 96px;
+    padding: 10px;
+  }
+
+  .container-planificacion-textos h2 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .container-planificacion-textos h3 {
+    font-size: 1.6rem;
+  }
+
+  .container-planificacion-pasos-superior,
+  .container-planificacion-pasos-inferior {
+    gap: 60px;
+  }
+
+  .container-plan {
+    gap: 40px;
+    width: 200px;
+  }
+
+  .container-plan img {
+    width: 60%;
+  }
+
+  .container-planificacion-pasos-inferior>.container-plan:nth-child(2) img {
+    width: 33%;
+  }
+
+  .info-plan-price {
+    padding-top: 0px;
+  }
+
+  .plan-price-text {
+    max-width: 22ch;
+  }
+
+  .info-plan>p {
+    font-size: 0.8rem;
+  }
+}
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {

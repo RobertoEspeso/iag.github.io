@@ -1,32 +1,3 @@
-.section-info-travel h2 {
-    max-width: 22ch;
-}
-
-.section-info-travel h4 {
-    max-width: 51ch;
-}
-
-
-.card-container-sections div {
-    background-color: var(--color-verde);
-}
-
-.section-info-travel .important-items {
-    margin-top: 80px;
-}
-
-.section-info-travel .important-items span {
-    font-weight: var(--Sf-medium);
-    font-size: 2rem;
-    color: var(--color-verde);
-}
-
-.section-info-travel .important-items p {
-    margin-bottom: 10px;
-}
-
-
-
 /*##### Media query #####*/
 
 /* Móvil */
@@ -74,6 +45,7 @@
     }
 
     .card-container-sections div {
+        background-color: var(--color-naranja);
         height: 130px;
         bottom: 70px;
         position: relative;
@@ -127,12 +99,8 @@
     .container-contactanos h2 span {
         font-size: 3.2rem;
     }
-
 }
+
 
 /* Desktop normal */
-@media (min-width: 1280px) and (max-width: 1535px) {
-    .section-info-travel .important-items span {
-        font-size: 1.8rem;
-    }
-}
+@media (min-width: 1280px) and (max-width: 1535px) {}

@@ -186,7 +186,61 @@
 
 
 /* Tablets horizontal / laptops chicas */
-@media (min-width: 1024px) and (max-width: 1279px) {}
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .section-trusted-by {
+        padding-top: 50px;
+    }
+
+    .section-trusted-by h2 {
+        font-size: 4rem;
+    }
+
+    .decoration-partner {
+        width: 300px;
+        position: absolute;
+        right: 4px;
+        bottom: 290px;
+    }
+
+    .decoration-partner img {
+        width: 100%;
+    }
+
+    .section-artist {
+        width: 90%;
+        height: auto;
+        gap: 0px;
+    }
+
+    .container-cards-artist {
+        gap: 15px;
+    }
+
+    .card-artist {
+        padding: 5px;
+        height: 250px;
+        width: 200px;
+    }
+
+    .card-artist p {
+        padding-top: 20px;
+        font-size: 0.8rem;
+    }
+
+    .btn-open-modal {
+        font-size: 1.5rem;
+        padding: 0px 0px 20px 30px;
+    }
+
+    .logos-partners {
+        margin-top: 100px;
+        gap: 100px;
+    }
+
+    .logos-partners img {
+        max-width: 23%;
+    }
+}
 
 /* Desktop normal */
 @media (min-width: 1280px) and (max-width: 1535px) {
