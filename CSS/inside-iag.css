@@ -145,7 +145,80 @@
 @media (min-width: 481px) and (max-width: 767px) {}
 
 /* Tablets vertical */
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .first-section-inside-iag {
+        width: 90%;
+        padding: 0px 10px;
+        margin-top: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .first-section-inside-iag img {
+        width: 50%;
+    }
+
+    .container-texts-inside-iag {
+        gap: 30px;
+    }
+
+    .container-texts-inside-iag h2 {
+        font-size: 3.2rem;
+    }
+
+    .container-texts-inside-iag h4 {
+        font-size: 1.6rem;
+    }
+
+    .container-paragraphs p {
+        font-size: 1.2rem;
+    }
+
+    .container-message {
+        margin-top: 130px;
+        margin-bottom: 30px;
+        width: 95%;
+        padding: 83px;
+    }
+
+    .container-message h3 {
+        font-size: 2rem;
+        max-width: 90%;
+        margin-bottom: 60px;
+    }
+
+    .container-message p,
+    .container-message span {
+        font-size: 1.2rem;
+    }
+
+
+    .container-sticker img {
+        position: relative;
+        top: calc(11vw);
+        right: calc(-59vw);
+        width: 60%;
+    }
+
+    .container-titular {
+        width: 460px;
+        height: 80px;
+    }
+
+    .container-titular h4 {
+        font-size: 1.6rem;
+    }
+
+    .logos-partners {
+        gap: 79px;
+    }
+
+    .logos-partners img {
+        width: 30%;
+    }
+}
 
 
 
