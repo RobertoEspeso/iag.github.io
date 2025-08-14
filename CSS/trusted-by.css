@@ -176,7 +176,78 @@
 
 
 /* Teléfonos grandes */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    .section-trusted-by {
+        padding-top: 50px;
+    }
+
+    .section-trusted-by h2 {
+        font-size: 3.5rem;
+    }
+
+    .container-cards-artist {
+        flex-direction: column;
+    }
+
+    .decoration-partner {
+        width: 300px;
+        position: absolute;
+        right: 0px;
+        bottom: 600px;
+    }
+
+    .decoration-partner img {
+        width: 100%;
+    }
+
+    .section-artist {
+        width: 90%;
+        height: auto;
+        gap: 0px;
+    }
+
+    .container-cards-artist {
+        gap: 40px;
+    }
+
+    .card-artist {
+        padding: 5px;
+        height: 340px;
+        width: 290px;
+    }
+
+    .card-artist p {
+        padding-top: 20px;
+        font-size: 0.8rem;
+    }
+
+    .btn-open-modal {
+        font-size: 1.5rem;
+        padding: 0px 0px 20px 30px;
+    }
+
+    .container-titular {
+        width: 400px;
+        height: 105px;
+    }
+
+    .container-titular h4 {
+        font-size: 1.5rem;
+    }
+
+    .logos-partners {
+        margin-top: 100px;
+        gap: 100px;
+    }
+
+    .logos-partners img {
+        max-width: 80%;
+    }
+
+    .list-more-artist {
+        font-size: 1rem;
+    }
+}
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {

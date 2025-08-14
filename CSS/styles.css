@@ -428,7 +428,108 @@ h2 {
 
 
 /* Teléfonos grandes */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .container-contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    gap: 35px;
+    padding: 0px 35px;
+  }
+
+  .container-contactanos p {
+    font-size: 1.2rem;
+  }
+
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 3rem;
+  }
+
+  .btn {
+    width: 230px;
+    height: 50px;
+    border-radius: 60px;
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-semiBold);
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #FFF;
+    padding: 12px;
+    text-align: center;
+    line-height: 30px;
+    z-index: 10;
+  }
+
+
+  .section-wwd {
+    padding-top: 100px;
+    padding-bottom: 0PX;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    gap: 200px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-wwd {
+    height: 450px;
+    width: 350px;
+  }
+
+  .circulo-icono {
+    width: 90px;
+  }
+
+  .card-container {
+    height: 450px;
+    width: 350px;
+  }
+
+  .card-container .animacion-img {
+    bottom: 0px;
+  }
+
+  .card-container div {
+    bottom: 0px;
+    height: 100px;
+  }
+
+  .card-container div p {
+    font-size: 1.5rem;
+  }
+
+  .card-wwd a {
+    top: 385px;
+  }
+
+  /* === Container Contactanos === */
+
+  .container-contactanos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    gap: 35px;
+    padding: 30px;
+  }
+
+  .container-contactanos p {
+    font-size: 1.2rem;
+  }
+
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 2.2rem;
+    line-height: 50px;
+  }
+}
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {

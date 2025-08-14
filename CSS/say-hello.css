@@ -170,7 +170,53 @@ span {
 
 
 /* Teléfonos grandes */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    .say-hello-content h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 3rem;
+    }
+
+    .contact h4,
+    span {
+        font-size: 1.6rem;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card-form {
+        background-color: var(--color-beige);
+        border-radius: 21px;
+        padding: 80px;
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 0px;
+        align-items: center;
+    }
+
+    textarea {
+        width: 350px;
+        height: 230px;
+        border: none;
+        border-radius: 12px;
+        padding: 20px;
+    }
+
+    .contact {
+        margin: 60px 0px;
+    }
+}
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {

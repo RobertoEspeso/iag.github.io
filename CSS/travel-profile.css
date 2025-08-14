@@ -237,7 +237,88 @@ textarea:focus {
 
 
 /* Teléfonos grandes */
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-travel-profile h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .container-travel-profile form h4 {
+    font-size: 1.5rem;
+    max-width: 229px;
+  }
+
+  .container-travel-profile form p {
+    font-size: 0.8rem;
+    max-width: 219px;
+  }
+
+  .container-card {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container-inputs {
+    align-items: flex-start;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    width: 300px;
+    height: 50px;
+  }
+
+  input.input-full {
+    width: 300px;
+
+  }
+
+  .inputs-inline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown {
+    width: 248px;
+  }
+
+  .dropdown-selected {
+    width: 300px;
+    height: 50px;
+  }
+
+  .container-inputs-radio {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+  }
+
+  .title-radio label {
+    font-size: 1.4rem;
+  }
+
+  .input-radio label {
+    font-size: 1rem;
+  }
+
+  .container-inputs>a>img {
+    width: 15%;
+  }
+
+  .container-travel-profile form a {
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .container-travel-profile form a {
+    padding-right: 0px;
+  }
+}
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
