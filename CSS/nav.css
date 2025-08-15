@@ -78,70 +78,148 @@ nav ul {
 
 /* Móvil */
 @media (max-width: 480px) {
+  header {
+    height: 90px;
+    background-color: #FFF;
+  }
+
+  nav {
+    background-color: #FFF;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 20;
+    position: fixed;
+  }
+
   .df {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    background-color: var(--color-beige);
+    top: 90px;
+    left: 0px;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+    justify-content: center;
   }
 
   nav ul {
-    gap: 60px
+    gap: 0px;
+  }
+
+  ul.df li {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    cursor: pointer;
+  }
+
+  .nav-link {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .submenu {
+    gap: 0px;
+  }
+
+  .submenu li a {
+    width: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+
+  .nav-link:hover,
+  .submenu li:hover {
+    color: #FFF;
+    background-color: var(--color-violacio);
+    font-weight: var(--Sf-regular);
+  }
+
+
+  .menu_hamburguesa>label,
+  .label_hamburguesa {
+    display: inline-block;
+  }
+
+  .list_icon {
+    width: calc(10vw);
+    height: calc(10vh);
+    max-width: 100px;
+    max-height: 100px;
+    cursor: pointer;
+  }
+
+  .menu_hamburguesa {
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
   }
 
   .menu_mobile {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    padding: 0px 20px;
   }
 
-  label {
-    display: inline-block;
+  .menu_mobile img {
+    width: 50%;
   }
 
-  .menu_hamburguesa {
-    display: inline-block;
+
+  #menu_hamburguesa:checked~ul.df {
+    height: calc(100vh - 90px);
+    padding: 20px 0px;
+    overflow: auto;
+    position: fixed;
+    overflow: hidden;
   }
 
-  .label_hamburguesa {
-    display: inline-block;
-    cursor: pointer;
-  }
 
   .nav_desplegable {
-    position: relative;
+    position: initial;
     display: inline-block;
   }
 
   .container-submenu {
-    right: -50px;
-    position: absolute;
-    display: none;
-    background: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    right: 0px;
+    position: initial;
+    display: block;
+    background: var(--color-beige);
+    box-shadow: none;
     min-width: 160px;
     z-index: 10;
-    width: 250px;
+    width: 100%;
     border-radius: 20px;
-    padding: 30px;
+    padding: 0px;
   }
 
-  .submenu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  .container-submenu {
+    display: block;
   }
 }
 

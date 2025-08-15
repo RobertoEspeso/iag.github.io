@@ -165,7 +165,123 @@
 /*##### Media query #####*/
 
 /* Móvil */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .wwd-container-textos {
+        padding: 20px;
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .wwd-textos-izquierda {
+        gap: 20px;
+    }
+
+    .wwd-textos-derecha {
+        padding-left: 0px;
+    }
+
+    .wwd-textos-izquierda h2 {
+        font-size: 2rem;
+        padding-right: 0px;
+    }
+
+    .wwd-textos-izquierda h3 {
+        font-size: 1.6rem;
+        padding-right: 0px;
+    }
+
+    .wwd-textos-derecha h4 {
+        margin-top: 30px;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .wwd-textos-derecha p {
+        font-size: 1.4rem;
+    }
+
+    .wwd-segunda-seccion h2 {
+        font-size: 3rem;
+    }
+
+    .wwd-cards-container {
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 90%;
+        gap: 70px;
+    }
+
+    .wwd-card-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wwd-card-group img {
+        max-width: 80px;
+    }
+
+    .wwd-card {
+        gap: 8px;
+        width: 330px;
+        height: 173px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .wwd-card h4 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .wwd-card p {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .wwd-tercer-seccion {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 150px auto;
+    }
+
+    .www-tercer-seccion-container {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .www-tercer-seccion-container img {
+        max-width: 100%;
+    }
+
+    .wwd-tercer-seccion-textos h3 {
+        font-size: 1.8rem;
+    }
+
+    .wwd-tercer-seccion-textos p {
+
+        font-size: 1.4rem;
+    }
+
+    .wwd-tercer-seccion-textos {
+        width: 90%;
+    }
+}
 
 
 

@@ -30,7 +30,120 @@
 /*##### Media query #####*/
 
 /* Móvil */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .card-wwd {
+        height: 450px;
+        width: 300px;
+    }
+
+    .circulo-icono {
+        width: 70px;
+        bottom: 40px;
+    }
+
+    .card-container {
+        height: 450px;
+        width: 300px;
+    }
+
+    .card-container-sections {
+        position: absolute;
+        overflow: hidden;
+        height: 450px;
+        width: 300px;
+        border-radius: 21px;
+    }
+
+    .card-container .animacion-img {
+        bottom: 0px;
+    }
+
+    .card-container-sections div {
+
+        height: 102px;
+        bottom: 70px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+
+    }
+
+    .card-container-sections div p {
+        font-size: 1.5rem;
+        color: #FFF;
+    }
+
+    .card-container div {
+        height: 130px;
+        bottom: 150px;
+    }
+
+    .card-container div p {
+        font-size: 1.6rem;
+    }
+
+    .card-wwd a {
+        top: 300px;
+    }
+
+    .section-wwd {
+        height: 700px;
+    }
+
+    .section-info-travel h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+
+    .section-info-travel .important-items p {
+        font-size: 1rem;
+    }
+
+    .section-info-travel .important-items span {
+        font-size: 1.2rem;
+    }
+
+
+    /* === Travels Pages === */
+
+    .section-travel {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .section-info-travel {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .section-info-travel h2 {
+        font-size: 2rem;
+    }
+
+    .section-info-travel h4 {
+        font-size: 1.6rem;
+    }
+
+    .section-info-travel p {
+        font-size: 1rem;
+    }
+
+    .section-info-travel .important-items span {
+        font-size: 1.4rem;
+    }
+
+    .section-info-travel .important-items p {
+        font-size: 1.2rem;
+    }
+}
 
 
 

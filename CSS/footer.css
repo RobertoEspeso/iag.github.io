@@ -51,7 +51,41 @@ footer {
 /*##### Media query #####*/
 
 /* Móvil */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    footer {
+        height: 930px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer_links ul,
+    .footer_contacto {
+        align-items: center;
+    }
+
+    .footer_links ul li a {
+        font-size: 1.4rem;
+    }
+
+    .footer_contacto {
+        font-size: 1.3rem;
+    }
+
+    .footer_fundaciones {
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_redes {
+
+        justify-content: center;
+    }
+}
 
 
 

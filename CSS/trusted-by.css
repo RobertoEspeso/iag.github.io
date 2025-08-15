@@ -171,7 +171,84 @@
 /*##### Media query #####*/
 
 /* Móvil */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    .section-trusted-by {
+        padding-top: 50px;
+    }
+
+    .section-trusted-by h2 {
+        font-size: 3rem;
+    }
+
+    .container-cards-artist {
+        flex-direction: column;
+    }
+
+    .decoration-partner {
+        width: 250px;
+        position: absolute;
+        right: 49px;
+        bottom: 570px;
+    }
+
+    .decoration-partner img {
+        width: 100%;
+    }
+
+    .section-artist {
+        width: 90%;
+        height: auto;
+        gap: 0px;
+    }
+
+    .container-cards-artist {
+        gap: 40px;
+    }
+
+    .card-artist {
+        padding: 5px;
+        height: 300px;
+        width: 240px;
+    }
+
+    .card-artist p {
+        padding-top: 27px;
+        font-size: 0.8rem;
+    }
+
+    .btn-open-modal {
+        font-size: 1.5rem;
+        padding: 0px 0px 20px 30px;
+    }
+
+    .container-titular {
+        width: 300px;
+        height: 100px;
+    }
+
+    .container-titular h4 {
+        font-size: 1rem;
+    }
+
+    .section-partners {
+        margin-bottom: 0px;
+        padding: 40px;
+    }
+
+    .logos-partners {
+        margin-top: 100px;
+        gap: 100px;
+    }
+
+    .logos-partners img {
+        max-width: 40%;
+    }
+
+    .list-more-artist {
+        font-size: 0.7rem;
+    }
+}
 
 
 
