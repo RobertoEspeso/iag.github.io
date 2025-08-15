@@ -124,7 +124,7 @@
 }
 
 .logos-partners {
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -194,6 +194,7 @@
 
 
     .container-sticker img {
+        display: none;
         top: calc(482vw);
         right: calc(-15vw);
         width: 70%;
