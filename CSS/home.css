@@ -42,6 +42,7 @@
   font-family: var(--font-SF);
   font-weight: var(--Sf-light);
   font-size: 2rem;
+  min-width: 7ch;
 }
 
 .about-info {

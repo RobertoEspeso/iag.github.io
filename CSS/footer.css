@@ -4,7 +4,7 @@ footer {
     color: #FFF;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 50px;
 }
 
@@ -27,18 +27,21 @@ footer {
     flex-direction: column;
     gap: 1.32rem;
     font-size: 1.6rem;
+    padding-left: 9vw;
 }
 
 .footer_asociados {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    padding-left: 34vw;
 }
 
 .footer_fundaciones {
     display: flex;
     gap: 60px;
     justify-content: flex-end;
+
 }
 
 .footer_redes {
@@ -71,6 +74,8 @@ footer {
 
     .footer_contacto {
         font-size: 1.3rem;
+        padding-left: 0vw;
+        padding-right: 0vw;
     }
 
     .footer_fundaciones {
@@ -85,6 +90,14 @@ footer {
 
         justify-content: center;
     }
+
+    .footer_asociados {
+        padding-left: 0vw;
+    }
+
+    .footer_redes img {
+        width: 70%
+    }
 }
 
 
@@ -96,6 +109,7 @@ footer {
         padding: 20px;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
 
     .footer_links ul,
@@ -109,12 +123,22 @@ footer {
 
     .footer_contacto {
         font-size: 1.4rem;
+        padding-left: 0vw;
+        padding-right: 0vw;
     }
 
     .footer_fundaciones,
     .footer_redes {
 
         justify-content: center;
+    }
+
+    .footer_asociados {
+        padding-left: 0vw;
+    }
+
+    .footer_redes img {
+        width: 70%
     }
 }
 
@@ -134,6 +158,8 @@ footer {
     .footer_contacto {
         gap: 1rem;
         font-size: 0.9rem;
+        padding-left: 0vw;
+        padding-right: 4vw;
     }
 
     .footer_fundaciones {
@@ -144,6 +170,7 @@ footer {
         width: 370px;
         gap: 40px;
         align-items: flex-end;
+        padding-left: 0vw;
     }
 
     .footer_asociados img {
@@ -190,16 +217,20 @@ footer {
     .footer_contacto {
         gap: 1rem;
         font-size: 1.2rem;
+        padding-left: 2vw;
+        padding-right: 14vw;
     }
 
     .footer_fundaciones {
         gap: 0px;
+
     }
 
     .footer_asociados {
         width: 370px;
         gap: 40px;
         align-items: flex-end;
+        padding-left: 0vw;
     }
 
     .footer_asociados img {
@@ -221,4 +252,12 @@ footer {
 }
 
 /* Desktop normal */
-@media (min-width: 1280px) and (max-width: 1535px) {}
+@media (min-width: 1280px) and (max-width: 1535px) {
+    .footer_contacto {
+        padding-left: 7vw;
+    }
+
+    .footer_asociados {
+        padding-left: 16vw;
+    }
+}

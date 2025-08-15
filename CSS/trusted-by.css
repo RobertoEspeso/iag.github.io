@@ -264,10 +264,11 @@
     }
 
     .container-cards-artist {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .decoration-partner {
+        display: none;
         width: 300px;
         position: absolute;
         right: 0px;
@@ -285,18 +286,19 @@
     }
 
     .container-cards-artist {
-        gap: 40px;
+        gap: 20px;
     }
 
     .card-artist {
         padding: 5px;
-        height: 340px;
-        width: 290px;
+        height: 220px;
+        width: 180px;
     }
 
     .card-artist p {
-        padding-top: 20px;
-        font-size: 0.8rem;
+        text-align: center;
+        padding-top: 16px;
+        font-size: 0.75rem;
     }
 
     .btn-open-modal {

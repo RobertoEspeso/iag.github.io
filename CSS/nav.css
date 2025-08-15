@@ -131,13 +131,17 @@ nav ul {
   .nav-link {
     display: flex;
     width: 100%;
-    height: 90px;
+    height: 10vh;
     justify-content: center;
     align-items: center;
   }
 
   .submenu {
     gap: 0px;
+  }
+
+  .submenu li {
+    background-color: #e0ded7
   }
 
   .submenu li a {
@@ -280,7 +284,7 @@ nav ul {
   .nav-link {
     display: flex;
     width: 100%;
-    height: 90px;
+    height: 10vh;
     justify-content: center;
     align-items: center;
   }
@@ -288,6 +292,11 @@ nav ul {
   .submenu {
     gap: 0px;
   }
+
+  .submenu li {
+    background-color: #e0ded7
+  }
+
 
   .submenu li a {
     width: 100%;
