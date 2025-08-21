@@ -76,14 +76,19 @@ footer {
         font-size: 1.3rem;
         padding-left: 0vw;
         padding-right: 0vw;
+        gap: 0.2rem;
     }
 
     .footer_fundaciones {
         justify-content: center;
         display: flex;
         gap: 30px;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .footer_fundaciones img {
+        max-width: 50%;
     }
 
     .footer_redes {
@@ -125,6 +130,7 @@ footer {
         font-size: 1.4rem;
         padding-left: 0vw;
         padding-right: 0vw;
+        gap: 0.2rem;
     }
 
     .footer_fundaciones,

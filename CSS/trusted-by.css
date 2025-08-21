@@ -219,9 +219,17 @@
         font-size: 0.7rem;
     }
 
+    .VER_MAS {
+        width: 92%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .btn-open-modal {
         font-size: 1.3rem;
-        padding: 15px;
+        padding: 0px;
     }
 
     .container-titular {
@@ -302,10 +310,19 @@
         font-size: 0.75rem;
     }
 
+    .VER_MAS {
+        width: 92%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .btn-open-modal {
         font-size: 1.5rem;
-        padding: 0px 0px 20px 30px;
+        padding: 0px;
     }
+
 
     .container-titular {
         width: 400px;

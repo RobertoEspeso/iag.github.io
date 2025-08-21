@@ -1,3 +1,9 @@
+.hero-say-hello {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 .say-hello-content {
     display: flex;
     flex-direction: column;
@@ -167,6 +173,18 @@ span {
 
 /* Móvil */
 @media (max-width: 480px) {
+    .hero-say-hello {
+        display: flex;
+        height: 250px;
+        width: 100%;
+    }
+
+    .hero-say-hello video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .say-hello-content h2 {
         margin-top: 50px;
         margin-bottom: 50px;
@@ -236,6 +254,18 @@ span {
 
 /* Teléfonos grandes */
 @media (min-width: 481px) and (max-width: 767px) {
+    .hero-say-hello {
+        display: flex;
+        height: 250px;
+        width: 100%;
+    }
+
+    .hero-say-hello video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .say-hello-content h2 {
         margin-top: 50px;
         margin-bottom: 50px;
