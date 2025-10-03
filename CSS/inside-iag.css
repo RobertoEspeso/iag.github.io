@@ -4,6 +4,7 @@
     justify-content: center;
     padding: 0px 80px;
     margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .container-texts-inside-iag {
@@ -11,18 +12,13 @@
     flex-direction: column;
     gap: 80px;
     padding-left: 8%;
+    justify-content: center;
 }
 
 .container-texts-inside-iag h2 {
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
-    font-size: 5rem;
-}
-
-.container-texts-inside-iag h4 {
-    font-family: var(--font-Sf);
-    font-weight: var(--Sf-light);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .container-paragraphs {
@@ -32,19 +28,19 @@
 }
 
 .container-paragraphs p {
-    font-family: var(--font-Sf);
+    font-family: var(--font-SF);
     font-weight: var(--Sf-light);
     font-size: 1.8rem;
 }
 
-.container-sticker {
-    position: absolute;
+.container-paragraphs p:nth-child(1) {
+    font-weight: var(--Sf-semiBold);
 }
 
-.container-sticker img {
-    position: relative;
-    top: calc(3vw);
-    right: calc(-73vw);
+.container-sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .second-section-inside-iag {
@@ -70,7 +66,7 @@
 
 .container-message h3 {
     color: #FFF;
-    font-family: var(--font-Sf);
+    font-family: var(--font-SF);
     font-weight: var(--Sf-light);
     font-size: 3rem;
     text-align: center;
@@ -81,14 +77,14 @@
 
 .container-message span {
     color: #FFF;
-    font-family: var(--font-Sf);
+    font-family: var(--font-SF);
     font-weight: var(--Sf-semiBold);
     font-size: 1.5rem;
 }
 
 .container-message p {
     color: #FFF;
-    font-family: var(--font-Sf);
+    font-family: var(--font-SF);
     font-weight: var(--Sf-regular);
     font-size: 1.5rem;
 }
@@ -106,6 +102,20 @@
     padding: 140px;
 }
 
+.section-partners h4:nth-child(1) {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-semiBold);
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.section-partners h4:nth-child(2) {
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-light);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
 .container-titular {
     width: 630px;
     height: 105px;
@@ -116,7 +126,7 @@
     border-radius: 80px 105px 105px 0px;
 }
 
-.container-titular h4 {
+.container-titular h4:nth-child(1) {
     color: var(--color-beige);
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
@@ -163,11 +173,7 @@
     }
 
     .container-texts-inside-iag h2 {
-        font-size: 3.2rem;
-    }
-
-    .container-texts-inside-iag h4 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .container-paragraphs p {
@@ -190,14 +196,7 @@
     .container-message p,
     .container-message span {
         font-size: 1rem;
-    }
-
-
-    .container-sticker img {
-        display: none;
-        top: calc(482vw);
-        right: calc(-15vw);
-        width: 70%;
+        text-align: center;
     }
 
     .container-titular {
@@ -205,13 +204,27 @@
         height: 80px;
     }
 
-    .container-titular h4 {
-        font-size: 1rem;
+    .section-partners {
+        margin-top: 100px;
+        padding: 50px;
     }
 
-    .section-partners {
+    .section-partners h4:nth-child(1) {
+        font-size: 1.8rem;
+    }
+
+    .section-partners h4:nth-child(2) {
+        font-size: 1.6rem;
+    }
+
+    .container-titular {
+        width: 300px;
+        height: 50px;
+    }
+
+    .section-partners .container-titular h4 {
+        font-size: 1rem;
         margin-bottom: 0px;
-        padding: 40px;
     }
 
     .logos-partners {
@@ -219,7 +232,11 @@
     }
 
     .logos-partners img {
-        width: 50%;
+        width: 65%;
+    }
+
+    .container-sticker img {
+        width: 90%;
     }
 }
 
@@ -252,11 +269,7 @@
     }
 
     .container-texts-inside-iag h2 {
-        font-size: 3.2rem;
-    }
-
-    .container-texts-inside-iag h4 {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
     }
 
     .container-paragraphs p {
@@ -267,7 +280,7 @@
         margin-top: 130px;
         margin-bottom: 30px;
         width: 95%;
-        padding: 83px;
+        padding: 60px;
     }
 
     .container-message h3 {
@@ -281,11 +294,17 @@
         font-size: 1rem;
     }
 
+    .section-partners {
+        margin-top: 100px;
+        padding: 50px;
+    }
 
-    .container-sticker img {
-        top: calc(316vw);
-        right: calc(-20vw);
-        width: 60%;
+    .section-partners h4:nth-child(1) {
+        font-size: 1.8rem;
+    }
+
+    .section-partners h4:nth-child(2) {
+        font-size: 1.6rem;
     }
 
     .container-titular {
@@ -293,8 +312,9 @@
         height: 80px;
     }
 
-    .container-titular h4 {
+    .section-partners .container-titular h4 {
         font-size: 1.4rem;
+        margin-bottom: 0px;
     }
 
     .logos-partners {
@@ -302,15 +322,21 @@
     }
 
     .logos-partners img {
-        width: 100%;
+        width: 65%;
     }
+
+    .container-sticker img {
+        width: 70%;
+    }
+
+
 }
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
     .first-section-inside-iag {
-        width: 90%;
-        padding: 0px 10px;
+        width: 100%;
+        padding: 0px 80px;
         margin-top: 100px;
         flex-direction: column;
         justify-content: center;
@@ -319,7 +345,7 @@
     }
 
     .first-section-inside-iag img {
-        width: 50%;
+        width: 70%;
     }
 
     .container-texts-inside-iag {
@@ -328,10 +354,6 @@
 
     .container-texts-inside-iag h2 {
         font-size: 3.2rem;
-    }
-
-    .container-texts-inside-iag h4 {
-        font-size: 1.6rem;
     }
 
     .container-paragraphs p {
@@ -356,12 +378,13 @@
         font-size: 1.2rem;
     }
 
+    .section-partners {
+        padding: 70px;
+    }
 
-    .container-sticker img {
-        position: relative;
-        top: calc(11vw);
-        right: calc(-59vw);
-        width: 60%;
+    .section-partners h4:nth-child(1),
+    .section-partners h4:nth-child(2) {
+        font-size: 1.95rem;
     }
 
     .container-titular {
@@ -369,8 +392,9 @@
         height: 80px;
     }
 
-    .container-titular h4 {
+    .section-partners .container-titular h4 {
         font-size: 1.6rem;
+        margin-bottom: 0px;
     }
 
     .logos-partners {
@@ -403,12 +427,9 @@
     }
 
     .container-texts-inside-iag h2 {
-        font-size: 3.2rem;
+        font-size: 2.5rem;
     }
 
-    .container-texts-inside-iag h4 {
-        font-size: 1.6rem;
-    }
 
     .container-paragraphs p {
         font-size: 1.2rem;
@@ -432,12 +453,19 @@
         font-size: 1.2rem;
     }
 
+    .section-partners h4:nth-child(1),
+    .section-partners h4:nth-child(2) {
+        font-size: 2rem;
+    }
 
-    .container-sticker img {
-        position: relative;
-        top: calc(7vw);
-        right: calc(-64vw);
-        width: 70%;
+    .container-titular {
+        width: 500px;
+        height: 70px;
+        align-items: end;
+    }
+
+    .container-titular h4:nth-child(1) {
+        font-size: 1.6rem;
     }
 
     .logos-partners {
@@ -457,15 +485,11 @@
     }
 
     .container-texts-inside-iag h2 {
-        font-size: 4rem;
-    }
-
-    .container-texts-inside-iag h4 {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
     }
 
     .container-paragraphs p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .container-message h3 {
@@ -474,13 +498,6 @@
 
     .container-message p {
         font-size: 1.3rem;
-    }
-
-    .container-sticker img {
-        width: 70%;
-        position: relative;
-        top: calc(6vw);
-        right: calc(-75vw);
     }
 
     .logos-partners img {

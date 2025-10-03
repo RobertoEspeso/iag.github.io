@@ -16,7 +16,7 @@
     margin-bottom: 100px;
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
-    font-size: 5rem;
+    font-size: 2.8rem;
 }
 
 .card-form {
@@ -24,7 +24,7 @@
     border-radius: 21px;
     padding: 80px;
     width: 960px;
-    height: 1310px;
+    margin-bottom: 100px;
 }
 
 .contact-form {
@@ -34,10 +34,18 @@
     gap: 40px;
 }
 
-.contact-form h4 {
+.say-hello-form-title,
+.container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-form .say-hello-form-title h4 {
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
-    font-size: 2.5rem;
+    font-size: 1.9rem;
 }
 
 .contact-inputs {
@@ -147,13 +155,21 @@ textarea {
 
 
 .contact {
-    margin: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0px 0px 0px;
     text-align: center;
+}
+
+.divisor {
+    border-left: 2px solid black;
+    height: 20px;
+    align-self: center;
 }
 
 .contact h4,
 span {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .contact span {
@@ -188,7 +204,7 @@ span {
     .say-hello-content h2 {
         margin-top: 50px;
         margin-bottom: 50px;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .contact h4,
@@ -203,8 +219,8 @@ span {
         gap: 20px;
     }
 
-    .contact-form h4 {
-        font-size: 2rem;
+    .contact-form .say-hello-form-title h4 {
+        font-size: 1.5rem;
     }
 
     .first-input,
@@ -248,6 +264,22 @@ span {
     .contact {
         margin: 60px 0px;
     }
+
+    .contact {
+        margin: 60px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact h4,
+    span {
+        font-size: 1.2rem;
+    }
+
+    .divisor {
+        display: none;
+    }
 }
 
 
@@ -269,12 +301,16 @@ span {
     .say-hello-content h2 {
         margin-top: 50px;
         margin-bottom: 50px;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .contact h4,
     span {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .divisor {
+        display: none;
     }
 
     .contact-form {
@@ -310,6 +346,9 @@ span {
 
     .contact {
         margin: 60px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 }
 
@@ -323,7 +362,7 @@ span {
 
     .contact h4,
     span {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
 
     .contact-form {
@@ -377,7 +416,7 @@ span {
 
     .contact h4,
     span {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 

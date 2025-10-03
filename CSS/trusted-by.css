@@ -9,18 +9,8 @@
 .section-trusted-by h2 {
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
-    font-size: 5rem;
+    font-size: 2.8rem;
     margin-bottom: 50px;
-}
-
-.decoration-partner {
-    position: absolute;
-    right: 13px;
-    bottom: 394px;
-}
-
-.decoration-partner img {
-    width: 100%;
 }
 
 
@@ -28,11 +18,12 @@
     width: 1774px;
     height: auto;
     border-radius: 21px;
-    gap: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     background-color: var(--color-naranja);
+    margin-bottom: 170px;
+
 }
 
 
@@ -125,43 +116,28 @@
 }
 
 .section-partners {
-    margin-top: 130px;
-    margin-bottom: 100px;
     width: 100%;
     height: auto;
-    background-color: var(--color-beige);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 140px;
+    padding: 90px;
+    padding-bottom: 0px;
 }
 
-.container-titular {
-    width: 630px;
-    height: 105px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-negro);
-    border-radius: 80px 105px 105px 0px;
-}
-
-.container-titular h4 {
-    color: var(--color-beige);
-    font-family: var(--font-Gotham);
-    font-weight: var(--Gotham-medium);
-    font-size: 2rem;
-}
 
 .logos-partners {
-    margin-top: 150px;
+    border-radius: 20px;
+    background-color: var(--color-beige);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 145px;
+    padding: 90px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -178,23 +154,11 @@
     }
 
     .section-trusted-by h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .container-cards-artist {
         flex-direction: row;
-    }
-
-    .decoration-partner {
-        display: none;
-        width: 250px;
-        position: absolute;
-        right: 49px;
-        bottom: 570px;
-    }
-
-    .decoration-partner img {
-        width: 100%;
     }
 
     .section-artist {
@@ -232,23 +196,15 @@
         padding: 0px;
     }
 
-    .container-titular {
-        width: 300px;
-        height: 100px;
-    }
-
-    .container-titular h4 {
-        font-size: 1rem;
-    }
-
     .section-partners {
         margin-bottom: 0px;
-        padding: 40px;
+        padding: 15px;
     }
 
     .logos-partners {
-        margin-top: 100px;
-        gap: 100px;
+        margin-top: 0px;
+        gap: 50px;
+        padding: 15px;
     }
 
     .logos-partners img {
@@ -256,7 +212,7 @@
     }
 
     .list-more-artist {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -269,23 +225,15 @@
     }
 
     .section-trusted-by h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .section-partners {
+        padding: 15px;
     }
 
     .container-cards-artist {
         flex-direction: row;
-    }
-
-    .decoration-partner {
-        display: none;
-        width: 300px;
-        position: absolute;
-        right: 0px;
-        bottom: 600px;
-    }
-
-    .decoration-partner img {
-        width: 100%;
     }
 
     .section-artist {
@@ -323,19 +271,9 @@
         padding: 0px;
     }
 
-
-    .container-titular {
-        width: 400px;
-        height: 105px;
-    }
-
-    .container-titular h4 {
-        font-size: 1.5rem;
-    }
-
     .logos-partners {
-        margin-top: 100px;
-        gap: 100px;
+        margin-top: 0px;
+        gap: 80px;
     }
 
     .logos-partners img {
@@ -357,15 +295,15 @@
         font-size: 3.5rem;
     }
 
-    .decoration-partner {
-        width: 300px;
-        position: absolute;
-        right: 0px;
-        bottom: 460px;
-    }
-
-    .decoration-partner img {
+    .section-partners {
         width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        padding-bottom: 0px;
     }
 
     .section-artist {
@@ -394,17 +332,8 @@
         padding: 0px 0px 20px 30px;
     }
 
-    .container-titular {
-        width: 560px;
-        height: 105px;
-    }
-
-    .container-titular h4 {
-        font-size: 1.6rem;
-    }
-
     .logos-partners {
-        margin-top: 100px;
+        margin-top: 0px;
         gap: 100px;
     }
 
@@ -424,18 +353,11 @@
     }
 
     .section-trusted-by h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
-    .decoration-partner {
-        width: 300px;
-        position: absolute;
-        right: 4px;
-        bottom: 290px;
-    }
-
-    .decoration-partner img {
-        width: 100%;
+    .section-partners {
+        padding: 33px;
     }
 
     .section-artist {
@@ -465,8 +387,8 @@
     }
 
     .logos-partners {
-        margin-top: 100px;
-        gap: 100px;
+        margin-top: 10px;
+        gap: 104px;
     }
 
     .logos-partners img {
@@ -478,21 +400,11 @@
 @media (min-width: 1280px) and (max-width: 1535px) {
 
     .section-trusted-by h2 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     .section-artist {
         width: 80%;
-    }
-
-    .decoration-partner {
-        position: absolute;
-        right: 70px;
-        bottom: 250px;
-    }
-
-    .decoration-partner {
-        width: 376px
     }
 
     .container-cards-artist {
@@ -500,6 +412,7 @@
     }
 
     .logos-partners {
-        gap: 80px;
+        gap: 100px;
+        justify-content: space-around;
     }
 }

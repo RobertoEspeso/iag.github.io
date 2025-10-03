@@ -434,7 +434,14 @@
 
     .container-contactanos h2,
     .container-contactanos h2 span {
-        font-size: 3.2rem;
+        font-size: 2.2rem;
+        max-width: 47ch;
+        text-align: center;
+        line-height: 56px;
+    }
+
+    .container-contactanos h2 {
+        font-size: 1.6rem;
     }
 }
 

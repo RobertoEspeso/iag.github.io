@@ -12,20 +12,12 @@
 }
 
 .titular_principal {
-
   text-align: center;
-  max-width: 26ch;
-  font-size: 4rem;
+  max-width: 30ch;
+  font-size: 2.8rem;
   color: var(--color-beige);
   font-family: var(--font-SF);
   font-weight: var(--Sf-regular);
-}
-
-.titular_principal_bold {
-  font-size: 4rem;
-  color: var(--color-beige);
-  font-family: var(--font-SF);
-  font-weight: var(--Sf-medium);
 }
 
 
@@ -152,12 +144,23 @@
   font-family: var(--font-Gotham);
   font-weight: var(--Gotham-medium);
   font-size: 1.2rem;
+  font-style: italic;
 }
 
 .info-plan>p {
   font-family: var(--font-SF);
   font-weight: var(--Sf-light);
   font-size: 1rem;
+}
+
+.container-contactanos h2 {
+  font-size: 3.5rem;
+  max-width: 31ch;
+  line-height: 80px;
+}
+
+.container-contactanos h2 span {
+  font-size: 3.6rem;
 }
 
 
@@ -199,9 +202,8 @@
     flex-direction: column;
   }
 
-  .titular_principal,
-  .titular_principal_bold {
-    font-size: 3rem;
+  .titular_principal {
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 
@@ -216,8 +218,12 @@
   }
 
   .about-info h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
+  }
+
+  .container-about-us p {
+    font-size: 1.6rem;
   }
 
   .container-planificacion {
@@ -229,7 +235,7 @@
   }
 
   .section-planificacion {
-    height: 1800px;
+    height: auto;
   }
 
   .container-planificacion-textos {
@@ -295,6 +301,13 @@
   .info-plan>p {
     font-size: 1rem;
   }
+
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 1.8rem;
+    max-width: 31ch;
+    line-height: 46px;
+  }
 }
 
 
@@ -305,9 +318,8 @@
     flex-direction: column;
   }
 
-  .titular_principal,
-  .titular_principal_bold {
-    font-size: 3.2rem;
+  .titular_principal {
+    font-size: 2.2rem;
     max-width: 20ch;
     line-height: 1.2;
   }
@@ -317,13 +329,17 @@
     padding: 50px 50px;
   }
 
+  .container-about-us p {
+    font-size: 1.8rem;
+  }
+
   .about-info h2 {
     font-size: 2.5rem;
 
   }
 
   .about-info h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 
   }
 
@@ -336,7 +352,7 @@
   }
 
   .section-planificacion {
-    height: 1800px;
+    height: auto;
   }
 
   .container-planificacion-textos {
@@ -354,7 +370,7 @@
 
 
   .container-planificacion-textos h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     max-width: 19ch;
   }
 
@@ -374,13 +390,13 @@
   }
 
   .container-plan {
-    max-width: 16ch;
+    max-width: 30ch;
     text-align: center;
     gap: 10px;
   }
 
   .container-plan img {
-    width: 40%;
+    width: 50%;
   }
 
   .container-planificacion-pasos-inferior>.container-plan:nth-child(2) img {
@@ -392,19 +408,25 @@
   }
 
   .info-plan>h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .info-plan>p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 2rem;
+    max-width: 31ch;
+    line-height: 40px;
   }
 }
 
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-  .titular_principal,
-  .titular_principal_bold {
+  .titular_principal {
     font-size: 3rem;
     max-width: 20ch;
   }
@@ -492,6 +514,13 @@
     font-size: 0.8rem;
   }
 
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 2.2rem;
+    max-width: 31ch;
+    line-height: 60px;
+  }
+
 }
 
 
@@ -501,12 +530,9 @@
 /* Tablets horizontal / laptops chicas */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .titular_principal {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 
-  .titular_principal_bold {
-    font-size: 3.5rem;
-  }
 
   .container-about-us {
     gap: 180px;
@@ -522,10 +548,15 @@
   }
 
   .about-info h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
-
+  .container-contactanos h2,
+  .container-contactanos h2 span {
+    font-size: 2.5rem;
+    max-width: 31ch;
+    line-height: 80px;
+  }
 
   .container-planificacion {
     height: 1025px;
@@ -546,7 +577,7 @@
   }
 
   .container-planificacion-textos h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .container-planificacion-pasos-superior,
@@ -597,7 +628,7 @@
   }
 
   .container-planificacion-textos h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 
   .container-planificacion-textos h3 {
@@ -614,7 +645,7 @@
   }
 
   .container-contactanos h2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 
 }

@@ -4,7 +4,7 @@ footer {
     color: #FFF;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 50px;
 }
 
@@ -19,6 +19,10 @@ footer {
 .footer_links ul li a {
     font-size: 1.87rem;
 
+}
+
+.footer_links ul li:first-child {
+    margin-bottom: 30px;
 }
 
 .footer_contacto {
@@ -165,7 +169,7 @@ footer {
         gap: 1rem;
         font-size: 0.9rem;
         padding-left: 0vw;
-        padding-right: 4vw;
+        padding-right: 0vw;
     }
 
     .footer_fundaciones {
@@ -220,11 +224,15 @@ footer {
         font-size: 1.4rem;
     }
 
+    .footer_links ul li:first-child {
+        width: 60%;
+    }
+
     .footer_contacto {
         gap: 1rem;
         font-size: 1.2rem;
-        padding-left: 2vw;
-        padding-right: 14vw;
+        padding-left: 0vw;
+        padding-right: 0vw;
     }
 
     .footer_fundaciones {

@@ -203,6 +203,16 @@ h2 {
   color: var(--color-celeste);
 }
 
+.btn-back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 10;
+}
+
 /* === Cards === */
 .section-wwd {
   padding-top: 100px;
@@ -305,7 +315,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .container-contactanos p {
@@ -317,8 +327,8 @@ h2 {
 .container-contactanos h2 {
   font-family: var(--font-SF);
   font-weight: var(--Sf-light);
-  font-size: 5.3rem;
-  max-width: 32ch;
+  font-size: 2.4rem;
+  max-width: 72ch;
   text-align: center;
   line-height: 80px;
 }
@@ -326,7 +336,7 @@ h2 {
 .container-contactanos h2 span {
   font-family: var(--font-SF);
   font-weight: var(--Sf-semiBold);
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 
@@ -409,14 +419,12 @@ h2 {
   font-family: var(--font-SF);
   font-weight: var(--Sf-medium);
   font-size: 1.8rem;
-  color: var(--color-naranja);
 }
 
 .section-info-travel .important-items p {
   font-family: var(--font-SF);
   font-weight: var(--Sf-light);
   font-size: 1.6rem;
-  color: var(--color-naranja);
 }
 
 
@@ -509,7 +517,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: auto;
     gap: 35px;
     padding: 30px;
   }
@@ -520,8 +528,8 @@ h2 {
 
   .container-contactanos h2,
   .container-contactanos h2 span {
-    font-size: 1.8rem;
-    line-height: 50px;
+    font-size: 1.5rem;
+    line-height: 44px;
   }
 
   .get-in-touch-animacion {
@@ -530,6 +538,11 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+
+  .btn-back-to-top {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -623,7 +636,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: auto;
     gap: 35px;
     padding: 30px;
   }
@@ -634,8 +647,13 @@ h2 {
 
   .container-contactanos h2,
   .container-contactanos h2 span {
-    font-size: 2.2rem;
-    line-height: 50px;
+    font-size: 1.4rem;
+    line-height: 35px;
+  }
+
+  .btn-back-to-top {
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -736,8 +754,13 @@ h2 {
 
   .container-contactanos h2,
   .container-contactanos h2 span {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     line-height: 50px;
+  }
+
+  .btn-back-to-top {
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -802,7 +825,7 @@ h2 {
   }
 
   .container-contactanos p {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   /* === Travels Pages === */
@@ -840,6 +863,11 @@ h2 {
 
   .section-info-travel .important-items p {
     font-size: 1.2rem;
+  }
+
+  .btn-back-to-top {
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -891,7 +919,9 @@ h2 {
   }
 
   .container-contactanos h2 {
-    font-size: 4.5rem;
+    font-size: 1.8rem;
+    max-width: 60ch;
+    line-height: 60px;
   }
 
   .section-info-travel h4 {
@@ -917,6 +947,7 @@ h2 {
 
   .card-container-sections {
     width: 600px;
+    height: 775px;
   }
 
   .card-container-sections div {

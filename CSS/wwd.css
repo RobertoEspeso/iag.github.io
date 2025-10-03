@@ -6,7 +6,7 @@
 }
 
 .wwd-container-textos {
-    padding: 60px;
+    padding: 0px;
     height: 784px;
     width: 1774px;
     border-radius: 27px;
@@ -14,34 +14,13 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
-}
-
-.wwd-textos-izquierda {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    gap: 150px;
-    max-width: 741px;
-}
-
-.wwd-textos-izquierda h2 {
-    font-family: var(--font-SF);
-    font-weight: var(--Sf-light);
-    font-size: 3.9rem;
-    padding-right: 70px;
-}
-
-.wwd-textos-izquierda h3 {
-    font-family: var(--font-SF);
-    font-weight: var(--Sf-light);
-    font-size: 2.4rem;
-    padding-right: 45px;
+    justify-content: flex-start;
 }
 
 .wwd-textos-derecha {
-    padding-left: 80px;
-    max-width: 713px;
+    padding-left: 139px;
+    padding-bottom: 70px;
+    max-width: 820px;
 }
 
 .wwd-textos-derecha h4 {
@@ -73,7 +52,7 @@
 .wwd-segunda-seccion h2 {
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-regular);
-    font-size: 5rem;
+    font-size: 2.8rem;
 }
 
 .wwd-cards-container {
@@ -81,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     width: 1570px;
     gap: 40px;
 }
@@ -101,11 +80,11 @@
 .wwd-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 10px;
     padding-left: 70px;
-    padding-top: 30px;
+    padding-top: 0px;
     background-color: var(--color-beige);
     border-radius: 50px 50px 50px 0px;
     width: 660px;
@@ -118,12 +97,14 @@
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-medium);
     font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 .wwd-card p {
     font-family: var(--font-Gotham);
     font-weight: var(--Gotham-light);
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 .wwd-tercer-seccion {
@@ -172,23 +153,14 @@
         flex-direction: column;
     }
 
-    .wwd-textos-izquierda {
-        gap: 20px;
-    }
+
 
     .wwd-textos-derecha {
         padding-left: 0px;
     }
 
-    .wwd-textos-izquierda h2 {
-        font-size: 2rem;
-        padding-right: 0px;
-    }
 
-    .wwd-textos-izquierda h3 {
-        font-size: 1.6rem;
-        padding-right: 0px;
-    }
+
 
     .wwd-textos-derecha h4 {
         margin-top: 30px;
@@ -201,7 +173,7 @@
     }
 
     .wwd-segunda-seccion h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .wwd-cards-container {
@@ -293,22 +265,8 @@
         flex-direction: column;
     }
 
-    .wwd-textos-izquierda {
-        gap: 20px;
-    }
-
     .wwd-textos-derecha {
         padding-left: 0px;
-    }
-
-    .wwd-textos-izquierda h2 {
-        font-size: 2rem;
-        padding-right: 0px;
-    }
-
-    .wwd-textos-izquierda h3 {
-        font-size: 1.6rem;
-        padding-right: 0px;
     }
 
     .wwd-textos-derecha h4 {
@@ -339,6 +297,7 @@
         gap: 8px;
         width: 330px;
         height: 173px;
+        padding-left: 35px;
     }
 
     .wwd-card h4 {
@@ -388,19 +347,20 @@
 /* Tablets vertical */
 @media (min-width: 768px) and (max-width: 1023px) {
     .wwd-container-textos {
+        display: flex;
         padding: 40px;
         height: auto;
         width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* align-content: center; */
+        gap: 40px;
     }
 
-    .wwd-textos-izquierda h2 {
-        font-size: 2rem;
-        padding-right: 0px;
-    }
-
-    .wwd-textos-izquierda h3 {
-        font-size: 1.6rem;
-        padding-right: 0px;
+    .wwd-textos-derecha {
+        padding-left: 0px;
+        padding-bottom: 00px;
     }
 
     .wwd-textos-derecha h4 {
@@ -426,7 +386,7 @@
     }
 
     .wwd-card {
-        gap: 60px;
+        gap: 17px;
         width: 530px;
         height: 173px;
     }
@@ -478,29 +438,32 @@
 /* Tablets horizontal / laptops chicas */
 @media (min-width: 1024px) and (max-width: 1279px) {
     .wwd-container-textos {
-        padding: 40px;
+        padding: 0px;
         height: auto;
         width: 90%;
     }
 
-    .wwd-textos-izquierda h2 {
-        font-size: 3rem;
-    }
-
-    .wwd-textos-izquierda h3 {
-        font-size: 2rem;
+    .wwd-container-textos img {
+        width: 50%;
     }
 
     .wwd-textos-derecha h4 {
-        font-size: 2rem;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
     }
 
     .wwd-textos-derecha p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .wwd-textos-derecha {
+        padding-left: 50px;
+        padding-right: 10px;
+        padding-bottom: 15px;
     }
 
     .wwd-segunda-seccion h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     .wwd-cards-container {
@@ -550,12 +513,7 @@
 @media (min-width: 1280px) and (max-width: 1535px) {
 
     .wwd-container-textos {
-        height: 900px;
         width: 90%;
-    }
-
-    .wwd-textos-izquierda h2 {
-        font-size: 3rem;
     }
 
     .wwd-textos-derecha h4 {
@@ -563,8 +521,11 @@
         margin-bottom: 60px;
     }
 
-    .wwd-textos-izquierda h3 {
-        font-size: 2rem;
+    .wwd-textos-derecha {
+        padding-right: 20px;
+        padding-left: 60px;
+        padding-bottom: 70px;
+        max-width: 820px;
     }
 
     .wwd-textos-derecha p {
@@ -587,7 +548,7 @@
     }
 
     .wwd-segunda-seccion h2 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     .www-tercer-seccion-container {

@@ -8,7 +8,7 @@
   margin-bottom: 100px;
   font-family: var(--font-Gotham);
   font-weight: var(--Gotham-medium);
-  font-size: 5rem;
+  font-size: 2.8rem;
 }
 
 .container-travel-profile form {
@@ -220,6 +220,10 @@ textarea:focus {
   font-size: 1rem;
 }
 
+.container-card:nth-child(6) h4 {
+  font-style: italic;
+}
+
 /*///////////////////////////////////*/
 
 .container-travel-profile button {
@@ -236,7 +240,7 @@ textarea:focus {
   .container-travel-profile h2 {
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -329,7 +333,7 @@ textarea:focus {
   .container-travel-profile h2 {
     margin-top: 100px;
     margin-bottom: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
@@ -539,8 +543,13 @@ textarea:focus {
     font-size: 1rem;
   }
 
+  .container-inputs {
+    align-items: flex-end;
+  }
+
   .container-inputs>a>img {
-    width: 5%;
+    /* width: 5%; */
+    width: 18%;
   }
 
   .container-travel-profile form a {

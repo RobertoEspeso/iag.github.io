@@ -17,13 +17,18 @@
 
 .section-info-travel .important-items span {
     font-weight: var(--Sf-semiBold);
-    font-size: 2.5rem;
-    color: var(--color-celeste);
+    font-size: 1.8rem;
 }
 
 .section-info-travel .important-items p {
-    font-size: 2rem;
-    color: var(--color-celeste);
+    font-size: 1.8rem;
+}
+
+.container-contactanos h2 {
+    font-size: 2.4rem;
+    max-width: 49ch;
+    text-align: center;
+    line-height: 68px;
 }
 
 
@@ -142,6 +147,12 @@
 
     .section-info-travel .important-items p {
         font-size: 1.2rem;
+    }
+
+    .container-contactanos h2,
+    .container-contactanos h2 span {
+        font-size: 1.4rem;
+        line-height: 44px;
     }
 }
 
@@ -262,11 +273,17 @@
     }
 
     .section-info-travel .important-items span {
-        font-size: 2.2rem;
+        font-size: 1.4rem;
     }
 
     .section-info-travel .important-items p {
         font-size: 1.6rem;
+    }
+
+    .container-contactanos h2,
+    .container-contactanos h2 span {
+        font-size: 1.4rem;
+        line-height: 44px;
     }
 }
 
@@ -385,11 +402,18 @@
     }
 
     .section-info-travel .important-items span {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
     }
 
     .section-info-travel .important-items p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+    }
+
+    .container-contactanos h2 {
+        font-size: 1.7rem;
+        max-width: 49ch;
+        text-align: center;
+        line-height: 50px;
     }
 }
 
@@ -478,7 +502,14 @@
 
     .container-contactanos h2,
     .container-contactanos h2 span {
-        font-size: 3.2rem;
+        font-size: 2rem;
+        max-width: 47ch;
+        text-align: center;
+        line-height: 56px;
+    }
+
+    .container-contactanos h2 {
+        font-size: 1.6rem;
     }
 }
 

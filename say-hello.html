@@ -77,7 +77,9 @@
             <h2>Say Hello</h2>
             <div class="card-form">
                 <form action="#" method="post" class="contact-form">
-                    <h4>Submit your request!</h4>
+                    <div class="say-hello-form-title">
+                        <h4>Submit your request!</h4>
+                    </div>
                     <div class="contact-inputs">
                         <div class="first-input">
                             <label for="name">Name:</label>
@@ -129,17 +131,27 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-violacio" type="submit">Send</button>
+                    <div class="container-btn">
+                        <button class="btn btn-violacio" type="submit">Send</button>
+                    </div>
                 </form>
-            </div>
-            <div class="contact">
-                <h4><span>Agency:</span> <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></h4>
-                <h4><span>Mail:</span> <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a></h4>
+                <div class="contact">
+                    <h4><span>Agency:</span> <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></h4>
+                    <div class="divisor"></div>
+                    <h4><span>Mail:</span> <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a>
+                    </h4>
+                </div>
             </div>
     </article>
+    <div class="btn-back-to-top" id="btn-back-to-top">
+        <img src="assets/top-button.png" alt="">
+    </div>
     <footer>
         <section class="footer_links">
             <ul>
+                <li>
+                    <img src="assets/logo-IAG-blanco.svg" alt="">
+                </li>
                 <li>
                     <a href="inside-iag.html">Inside IAG</a>
                 </li>
@@ -154,24 +166,23 @@
                 </li>
             </ul>
         </section>
-        <section class="footer_contacto">
-            <p>Agency: <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></p>
-            <p>Mail: <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a></p>
-        </section>
         <section class="footer_asociados">
-            <img src="assets/logo-IAG-blanco.svg" alt="">
             <div class="footer_fundaciones">
                 <img src="assets/logo-niccolos-light-foundation.svg" alt="">
                 <img src="assets/ciff-logo.svg" alt="">
             </div>
+            <div class="footer_contacto">
+                <p>Agency: <a href="tel:+1(305) 532-6999">+1(305) 532-6999</a></p>
+                <p>Mail: <a href="mailto:reservations@iagtravel.com">reservations@iagtravel.com</a></p>
+            </div>
             <div class="footer_redes">
                 <a href="#" target="_blank"><img src="assets/icono-ig.svg" alt=""></a>
                 <a href="#" target="_blank"><img src="assets/icono-fb.svg" alt=""></a>
-                <a href="#" target="_blank"><img src="assets/icono-wp.svg" alt=""></a>
             </div>
         </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/btn-back-to-top.js"></script>
     <script src="js/dropdown.js"></script>
 </body>
 
