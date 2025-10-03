@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
 
     // Mostrar si se bajó más de 200px y no estamos en los últimos 500px
     if (scrollTop > 200 && scrollTop + windowHeight < documentHeight - footerOffset) {
-        btn.style.display = "block";
+        btn.classList.add("btn-back-to-top")
     } else {
         btn.style.display = "none";
     }
