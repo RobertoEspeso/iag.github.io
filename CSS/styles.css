@@ -369,7 +369,7 @@ h2 {
 .card-container-sections div {
   background-color: var(--color-naranja);
   height: 176px;
-  bottom: 204px;
+  bottom: 190px;
   position: relative;
   display: flex;
   align-items: flex-end;

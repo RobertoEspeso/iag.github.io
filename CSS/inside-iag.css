@@ -68,7 +68,7 @@
     color: #FFF;
     font-family: var(--font-SF);
     font-weight: var(--Sf-light);
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     max-width: 75%;
     margin-bottom: 100px;
@@ -117,20 +117,21 @@
 }
 
 .container-titular {
-    width: 630px;
-    height: 105px;
+    width: 450px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-negro);
-    border-radius: 80px 105px 105px 0px;
+    border-radius: 120px 105px 105px 0px;
 }
 
 .container-titular h4:nth-child(1) {
     color: var(--color-beige);
-    font-family: var(--font-Gotham);
-    font-weight: var(--Gotham-medium);
-    font-size: 2rem;
+    font-family: var(--font-SF);
+    font-weight: var(--Sf-medium);
+    font-size: 1.4rem;
+    margin-bottom: 0px;
 }
 
 .logos-partners {
@@ -461,7 +462,6 @@
     .container-titular {
         width: 500px;
         height: 70px;
-        align-items: end;
     }
 
     .container-titular h4:nth-child(1) {
