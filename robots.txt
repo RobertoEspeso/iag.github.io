@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Bloquear rutas internas (si existen)
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /temp/
+Disallow: /internal/
+
+Sitemap: https://www.iagtravel.com/sitemap.xml
