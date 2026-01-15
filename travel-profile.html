@@ -75,7 +75,7 @@
     </header>
     <article class="container-travel-profile">
         <h2>Travel Profile</h2>
-        <form action="" method="post">
+        <form action="" method="post" id="travelProfileForm">
             <div class="container-cards">
                 <div class="container-card">
                     <h4>Personal Information</h4>
@@ -237,7 +237,7 @@
                                         <li data-value="wyoming">Wyoming</li>
                                     </ul>
                                     <!-- Select real oculto -->
-                                    <select name="travel-type" class="hidden-select" required>
+                                    <select name="state" class="hidden-select" id="licenseState" required>
                                         <option value="" selected disabled>Please Select...</option>
                                         <option value="alabama">Alabama</option>
                                         <option value="alaska">Alaska</option>
@@ -513,6 +513,159 @@
     <script src="js/btn-back-to-top.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/addInputsForm.js"></script>
+    <script>
+    (() => {
+      const form = document.getElementById("travelProfileForm");
+      if (!form) return;
+    
+      // --- 1) Conectar dropdown visual (State) con el <select> real ---
+      const stateDropdown = form.querySelector(".container-card .dropdown"); // el primero que encuentre
+      const stateSelected = stateDropdown?.querySelector(".dropdown-selected");
+      const stateOptions = stateDropdown?.querySelectorAll(".dropdown-options li");
+      const stateSelect = form.querySelector("select.hidden-select#licenseState") 
+                       || form.querySelector("select.hidden-select[name='state']")
+                       || form.querySelector("select.hidden-select"); // fallback
+    
+      if (stateOptions && stateSelected && stateSelect) {
+        stateOptions.forEach(li => {
+          li.addEventListener("click", () => {
+            const value = li.getAttribute("data-value") || "";
+            stateSelect.value = value;
+            stateSelected.textContent = li.textContent;
+          });
+        });
+      }
+    
+      // --- 2) Helpers ---
+      function val(id) {
+        const el = form.querySelector("#" + id);
+        return el ? el.value.trim() : "";
+      }
+      function radio(name) {
+        const checked = form.querySelector(`input[type="radio"][name="${name}"]:checked`);
+        return checked ? checked.value : "";
+      }
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+    
+      // --- 3) Enviar por fetch ---
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+    
+        // Agarramos TODOS los campos importantes
+        const data = {
+          formType: "travel_profile",
+    
+          // Personal Information
+          personal: {
+            name: val("name-personal-information"),
+            lastName: val("last-name-personal-information"),
+            email: val("email"),
+            phone: val("phone"),
+          },
+    
+          // Passport
+          passport: {
+            countryIssue: val("country-issue"),
+            dateIssue: val("date-issue-passport"),
+            firstName: val("first-name-passport"),
+            middleName: val("middle-name-passport"),
+            lastName: val("last-name-passport"),
+            dateBirth: val("date-birth-passport"),
+            nationality: val("nationality-passport"),
+            passportNumber: val("passport-number"),
+            validUntil: val("valid-until-passport"),
+          },
+    
+          // Drivers License
+          driversLicense: {
+            firstName: val("first-name-license"),
+            middleName: val("middle-name-license"),
+            lastName: val("last-name-license"),
+            dateBirth: val("date-birth-license"),
+            state: stateSelect ? (stateSelect.value || "") : "",
+            licenseNumber: val("license-number-license"),
+            dateIssue: val("date-issue-license"),
+            validUntil: val("valid-until-license"),
+          },
+    
+          // Frequent Flyer
+          frequentFlyer: {
+            programNameStatus: val("program-name-status"),
+            accountNumber: val("account-number"),
+          },
+    
+          // Airplane Preferences (radios)
+          airplanePreferences: {
+            class: radio("class"),       // economy / business / first
+            position: radio("position"), // aisle / window / center
+          },
+    
+          // Hotel Programs (puede haber varios si agregan con JS)
+          hotelPrograms: Array.from(form.querySelectorAll("#container-hotel-programs-and-car-preferences-inputs .inputs-inline"))
+            .map(row => {
+              const hotelName = row.querySelector('input[name="hotel-name"]')?.value.trim() || "";
+              const membership = row.querySelector('input[name="guest-number"]')?.value.trim() || "";
+              return (hotelName || membership) ? { hotelName, membership } : null;
+            })
+            .filter(Boolean),
+    
+          hotelPreferences: {
+            stars: radio("stars"),      // 3-stars / 4-stars / 5-stars
+            roomType: radio("Type"),    // suite / king / double  (sí, Type está con mayúscula en tu HTML)
+          },
+    
+          // Rental Car Programs (varios)
+          rentalCarPrograms: Array.from(form.querySelectorAll("#rental-car-programs-inputs .inputs-inline"))
+            .map(row => {
+              const company = row.querySelector('input[name="car-company-name"]')?.value.trim() || "";
+              const account = row.querySelector('input[name="account-number-retal-car"]')?.value.trim() || "";
+              return (company || account) ? { company, account } : null;
+            })
+            .filter(Boolean),
+        };
+    
+        // Validación mínima (para que no llegue vacío)
+        if (!data.personal.name) return alert("Name is required.");
+        if (!data.personal.lastName) return alert("Last Name is required.");
+        if (!data.personal.email || !isValidEmail(data.personal.email)) return alert("Please enter a valid email.");
+    
+        // Botón loading
+        const btn = form.querySelector('button[type="submit"]');
+        const oldText = btn ? btn.textContent : "";
+        if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }
+    
+        try {
+          const resp = await fetch("/send-mail.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+          });
+    
+          const result = await resp.json().catch(() => ({}));
+    
+          if (resp.ok && result.status === "OK") {
+            alert("Travel Profile sent successfully!");
+            form.reset();
+    
+            // Reset del dropdown visual
+            if (stateSelected) stateSelected.textContent = "Please Select...";
+            if (stateSelect) stateSelect.value = "";
+          } else {
+            alert(result.error || "Could not send. Please try again.");
+          }
+    
+        } catch (err) {
+          console.error(err);
+          alert("Network error. Please try again.");
+        } finally {
+          if (btn) { btn.disabled = false; btn.textContent = oldText || "Send"; }
+        }
+      });
+    })();
+    </script>
+
 </body>
 
 </html>
