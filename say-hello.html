@@ -76,7 +76,7 @@
         <section class="say-hello-content">
             <h2>Say Hello</h2>
             <div class="card-form">
-                <form action="#" method="post" class="contact-form">
+                <form action="#" method="post" class="contact-form" id="contactForm">
                     <div class="say-hello-form-title">
                         <h4>Submit your request!</h4>
                     </div>
@@ -114,7 +114,7 @@
                                     <li data-value="leisure">Leisure Travel</li>
                                 </ul>
                                 <!-- Select real oculto -->
-                                <select name="travel-type" class="hidden-select" required>
+                                <select name="travel-type" class="hidden-select" id="travelType" required>
                                     <option value="" selected disabled>Please Select...</option>
                                     <option value="entertainment">Entertainment Travel</option>
                                     <option value="corporate">Corporate Travel</option>
@@ -184,6 +184,85 @@
     <script src="js/script.js"></script>
     <script src="js/btn-back-to-top.js"></script>
     <script src="js/dropdown.js"></script>
+    <script>
+        (() => {
+          const form = document.getElementById("contactForm");
+          if (!form) return;
+        
+          // --- 1) Conectar dropdown visual con el <select> real ---
+          const dropdown = form.querySelector(".dropdown");
+          const selected = dropdown?.querySelector(".dropdown-selected");
+          const options = dropdown?.querySelectorAll(".dropdown-options li");
+          const select = document.getElementById("travelType");
+        
+          if (options && selected && select) {
+            options.forEach(li => {
+              li.addEventListener("click", () => {
+                const value = li.getAttribute("data-value");
+                select.value = value; // setea el select real (lo importante)
+                selected.textContent = li.textContent; // actualiza el texto visible
+              });
+            });
+          }
+        
+          // --- 2) Enviar formulario por fetch ---
+          function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+          }
+        
+          form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+        
+            const data = {
+              formType: "contact",
+              name: form.querySelector("#name")?.value.trim() || "",
+              company: form.querySelector("#company")?.value.trim() || "",
+              email: form.querySelector("#email")?.value.trim() || "",
+              phone: form.querySelector("#phone")?.value.trim() || "",
+              service: select?.value || "",
+              comments: form.querySelector("#comments")?.value.trim() || ""
+            };
+        
+            // Validación simple
+            if (!data.name) return alert("Name is required.");
+            if (!data.company) return alert("Company is required.");
+            if (!data.email || !isValidEmail(data.email)) return alert("Please enter a valid email.");
+            if (!data.service) return alert("Please select a service.");
+            if (!data.comments || data.comments.length < 10) return alert("Comments must be at least 10 characters.");
+        
+            const btn = form.querySelector('button[type="submit"]');
+            const oldText = btn ? btn.textContent : "";
+            if (btn) { btn.disabled = true; btn.textContent = "Sending..."; }
+        
+            try {
+              const resp = await fetch("/send-mail.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+              });
+        
+              const result = await resp.json().catch(() => ({}));
+        
+              if (resp.ok && result.status === "OK") {
+                alert("Message sent successfully!");
+                form.reset();
+        
+                // Reset texto del dropdown
+                if (selected) selected.textContent = "Please Select...";
+                if (select) select.value = "";
+              } else {
+                alert(result.error || "Could not send message. Please try again.");
+              }
+            } catch (err) {
+              console.error(err);
+              alert("Network error. Please try again.");
+            } finally {
+              if (btn) { btn.disabled = false; btn.textContent = oldText || "Send"; }
+            }
+          });
+        })();
+    </script>
+
 </body>
 
 </html>
